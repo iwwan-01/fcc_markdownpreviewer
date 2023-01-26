@@ -1,5 +1,15 @@
+marked.setOptions({
+  breaks: true,
+})
+
 const App = () => {
   const [text, setText] = React.useState('')
+
+  const defaultState =
+    '# This is a header \n## This is a sub header\n [This is a link](https://iwwan-01.github.io/digital-resume)\n\n`This is an inline code`\n```\nThis\nis\nmultiline\ncode\n```\n- This is a list item\n> This is a blockquote\n\n![This is an image](https://upload.wikimedia.org/wikipedia/commons/3/39/FreeCodeCamp_logo.png)\n\n**This is bold text**'
+  React.useEffect(() => {
+    setText(defaultState)
+  }, [])
 
   return (
     <div className='text-center px-4'>

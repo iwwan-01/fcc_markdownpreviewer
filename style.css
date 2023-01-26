@@ -8,7 +8,7 @@ body {
 }
 
 .textarea {
-  width: 100%;
+  width: 50%;
   font-size: 22px;
   padding: 20px;
   border-radius: 0px 20px;
@@ -16,6 +16,8 @@ body {
 }
 
 #preview {
+  margin: auto;
+  width: 50%;
   padding: 40px;
   text-align: left;
   background-color: white;
@@ -34,4 +36,13 @@ body {
 #preview pre {
   background-color: white;
   padding: 10px;
+}
+
+blockquote {
+  background-color: gray;
+  color: white;
+}
+
+img {
+  width: 50%;
 }
